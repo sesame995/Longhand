@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1400">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Handlee&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="./css/gallery-center.css" rel="stylesheet" type="text/css">
+    <link href="./css/flowslide.css" rel="stylesheet" type="text/css">
+    <link href="./css/slidebanner.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="./css/indexstyle.css">
+    <title>Longhand</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <header>
+        <img class="logo" src="./images/logo.png" alt="롱핸드 로고">
+        <ul class="icon">
+            <li><a href="#"><img src="./images/icon1.png" alt="마이페이지 아이콘"></a></li>
+            <li class="btn"><a href="#"><img src="./images/icon2.png" alt="검색 아이콘"></a></li>
+            <li><a href="#"><img src="./images/icon3.png" alt="장바구니 아이콘"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="./sub1.html">브랜드 소개</a></li>
+            <li><a href="./sub2.html">다이어리/노트</a></li>
+            <li><a href="./sub3.html">문구류</a></li>
+            <li><a href="./sub4.html">이벤트</a></li>
+        </ul>
+    </header>
+    <div class="swiper-container slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/bg1.png" alt="배너1"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/bg2.png" alt="배너2"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img src="./images/bg3.png" alt="배너3"></a>
+            </div>
+        </div>
+        <!-- 화살표 버튼 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- 블릿 버튼 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- con1 -->
+    <div class="box1">
+        <div class="con1">
+            <h2>손은 생각을 보기 위한 창이다</h2>
+            <p>우리는 세상을 눈으로 보지만 그것을 잡기 위해서는 손을 사용합니다.</p>
+            <p>손글씨는 보편적인 동시에 매우 개인적입니다<br>
+                자신의 자아를 표현하는매우 친밀하면서도 보편적으로 접근할 수 있는 방식으로<br>
+                다른 사람들과 자신을 연결하는 최고의 방법입니다.
+            </p>
+            <p>펜과 종이로 필기하면서, 손으로 쓰는 즐거움을 느껴 보세요</p>
+            <a href="./sub1.html">더보기</a>
+            <img src="./images/2.png" alt="이미지">
+
+            <!-- circle text -->
+            <div id="container">
+                <div id="circle">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300"
+                        enable-background="new 0 0 300 300" xml:space="preserve">
+                        <defs>
+                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                        </defs>
+                        <circle cx="150" cy="100" r="75" fill="none" />
+                        <g>
+                            <use xlink:href="#circlePath" fill="none" />
+                            <text fill="#000">
+                                <textPath xlink:href="#circlePath">Longhand Longhand Longhand Longhand Longhand
+                                </textPath>
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <h3>The hand is the window on to the mind</h3>
+    </div>
+    <!-- con2 -->
+    <div class="con2">
+        <h1>BEST ITEM</h1>
+        <div class="swiper-container gallery-center">
+            <div class="gallery-center_inner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/best1.png" alt="갤러리1">
+                        <div class="box">
+                            <h1>2023 다이어리 세트</h1>
+                            <a href="./sub2.html">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/best2.png" alt="갤러리1">
+                        <div class="box">
+                            <h1>소프트커버 노트 세트</h1>
+                            <a href="./sub2.html">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/best3.png" alt="갤러리1">
+                        <div class="box">
+                            <h1>편지지 세트</h1>
+                            <a href="./sub2.html">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/best4.png" alt="갤러리1">
+                        <div class="box">
+                            <h1>Longhand 볼펜 세트</h1>
+                            <a href="./sub2.html">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- con3 -->
+
+    <div class="con3">
+        <h1>EVENT</h1>
+        <div class="swiper-container gallery-center2">
+            <div class="gallery-center_inner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/event1.png" alt="갤러리1">
+                        <a href="./sub4.html">
+                            <h3>매장 오픈기념 이벤트</h3>
+                        </a>
+                        <p>7월 한달간 오프라인 매장 구매시<br>
+                            노트/다이어리 20%할인</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/event2.png" alt="갤러리1">
+                        <a href="./sub4.html">
+                            <h3>신규회원 가입 이벤트</h3>
+                        </a>
+                        <p>신규회원 가입시<br>
+                            신규전용 할인쿠폰 발급</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/event3.png" alt="갤러리1">
+                        <a href="./sub4.html">
+                            <h3>포토리뷰 작성 이벤트</h3>
+                        </a>
+                        <p>포토리뷰 작성 시 <br>
+                            리뷰포인트 2배 지급</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+
+    <!-- con4 -->
+    <div class="con4">
+        <h1>REVIEWS</h1>
+        <div class="swiper-container flowslide">
+            <div class="flowslide_inner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/review1.png" alt="갤러리1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/review2.png" alt="갤러리1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/review3.png" alt="갤러리1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/review4.png" alt="갤러리1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/review5.png" alt="갤러리1"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <img src="./images/logo.png" alt="로고 이미지">
+        <ul>
+            <li><a href="#"><img src="./images/instaicon.png" alt="인스타그램 아이콘"></a></li>
+            <li><a href="#"><img src="./images/twittericon.png" alt="트위터 아이콘"></a></li>
+            <li><a href="#"><img src="./images/youtubeicon.png" alt="유튜브 아이콘"></a></li>
+            <li><a href="#"><img src="./images/facebookicon.png" alt="페이스북 아이콘"></a></li>
+        </ul>
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">이용악관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">매장안내</a></li>
+        </ul>
+    </footer>
+
+
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/gallery-center.js"></script>
+    <script src="./script/flowslide.js"></script>
+    <script src="./script/slidebanner.js"></script>
+    <script src="./script/searchbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'NanumSquare';
+    font-size: 13px;
+    line-height: 30px;
+    color: #000;
+    min-width: 1320px;
+    position: relative;
+}
+
+/* header */
+
+.top {
+    margin: auto;
+    background-color: #FFF0DF;
+    height: 130px;
+
+}
+
+header {
+    width: 1320px;
+    margin: 10px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 190px;
+    height: 45px;
+}
+
+header ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon li img {
+    width: 45px;
+    height: 45px;
+}
+
+.icon li {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    font-size: 18px;
+    padding: 5px 20px;
+    border: 2px solid #9B5507;
+    background-color: #FFF0DF;
+    border-radius: 12px 12px 0 0;
+}
+
+.menu li a:hover {
+    background-color: #9B5507;
+    color: #FFF0DF;
+}
+
+.icon li a:hover {
+    filter: grayscale(0.7);
+}
+
+/* search bar */
+
+body {
+    background: #f2f2f2;
+    width: 100%;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    width: 1320px;
+    margin: auto;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #a95a00;
+    border-right: none;
+    padding: 5px 20px;
+    border-radius: 150px;
+    outline: none;
+    color: #FFF0DF;
+}
+
+.searchTerm:focus {
+    color: #a95a00;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #a95a00;
+    background: url(../images/x.png) no-repeat center;
+    background-size: 55%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+    width: 100%;
+    position: absolute;
+    top: -58px;
+    left: 0%;
+    background-color: #a95a00;
+    padding: 10px 0;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+/* con1 */
+.con1 {
+    width: 1320px;
+    margin: auto;
+}
+
+/* con2 */
+
+
+.con2 {
+    width: 1320px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #643500;
+    font-size: 35px;
+    margin: 50px 0;
+}
+
+.con2 ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.con2 ul li {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.con2 ul li img {
+    width: 100%;
+}
+
+/* hover */
+
+
+
+
+/* footer */
+footer {
+    background-color: #FFF0DF;
+    border-top: 5px #9B5507 solid;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul img {
+    width: 45px;
+    height: 45px;
+}
+
+footer ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer ul li img:hover {
+    filter: contrast(15);
+}
+
+
+
+
+
+
+
+/* hover */
+
+
+.gradient-border:hover {
+    --border-width: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 285px;
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+
+
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(60deg,
+                #FFF0DF,
+                #ffc27d,
+                #FFF0DF,
+                #ffa844,
+                #9B5507,
+                #5b3000,
+                #643500,
+                #ffdbb2);
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        animation: moveGradient 4s alternate infinite;
+        border-radius: 28px;
+    }
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
