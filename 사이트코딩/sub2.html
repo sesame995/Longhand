@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1400">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="./css/gallerysub2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/sub2style.css">
+    <title>Longhand</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="top">
+        <header>
+            <a href="./index.html"><img class="logo" src="./images/logo.png" alt="롱핸드 로고"></a>
+            <ul class="icon">
+                <li><a href="#"><img src="./images/icon1.png" alt="마이페이지 아이콘"></a></li>
+                <li class="btn"><a href="#"><img src="./images/icon2.png" alt="검색 아이콘"></a></li>
+                <li><a href="#"><img src="./images/icon3.png" alt="장바구니 아이콘"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="./sub1.html">브랜드 소개</a></li>
+                <li><a href="./sub2.html">다이어리/노트</a></li>
+                <li><a href="./sub3.html">문구류</a></li>
+                <li><a href="./sub4.html">이벤트</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- con1 -->
+    <div id="order">
+        <img src="./images/sub3image.png " alt="상품이미지" id="img1">
+        <img src="./images/blank.png" id="img2" alt="상품이미지">
+        <img src="./images/line.png" id="img3" alt="상품이미지"> 
+        <img src="./images/grid.png" id="img4" alt="상품이미지">
+
+        <div class="order_right">
+            <h3>클래식 노트 소프트 커버</h3>
+            <p>
+                사이즈 : 13 x 21 cm<br>
+                레이아웃 : 무지 / 라인 / 모눈<br>
+                페이지 : 150페이지<br>
+                커버종류 : 소프트커버<br>
+                컬러 : 브라운(brown)<br>
+                내지 재질 : 70g/m² , 중성지, 아이보리 컬러
+            </p>
+            <button class="blank">무지</button>
+            <button class="line">라인</button>
+            <button class="grid">모눈</button>
+<div class="table">
+            <table id="input_div">
+                <tr>
+                    <td>
+                        <input type="button" value="-" id="minus" onclick="minus()">
+                        <input type="text" size="25" value="1" id="count">
+                        <input type="button" value="+" id="plus" onclick="plus()">
+                    </td>
+
+                    <th><a href="#">장바구니 담기</a></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+    <!-- con2 -->
+    <div class="tab">
+        <ul class="tabnav">
+            <li><a href="#tab01">상품 설명</a></li>
+            <li><a href="#tab02">상품 후기</a></li>
+            <li><a href="#tab03">Q&A</a>
+            </li>
+        </ul>
+        <div class="tabcontent">
+            <div id="tab01">롱핸드의 노트는 잉크 프루프 재질의 종이를 사용하여 잉크가 번짐없이 깔끔하게 써지고, 잉크 마르는 속도가 빨라 손에 묻을 걱정이 없으며, 잉크의 색이 선명하게
+                나타나게 하여 만족스러운 필기감을 선사합니다. 내지는 무지, 라인, 모눈 총 3가지로 제작되었습니다. 각자의 개성과 취향에 맞추어 사용해 보세요</div>
+            <div id="tab02">
+                <div id="Accordion_wrap">
+                    <div class="que">
+                        <span>상품후기</span>
+                    </div>
+                    <div class="anw">
+                        <span>This is first answer.</span>
+                    </div>
+                    <div class="que">
+                        <span>상품후기</span>
+                    </div>
+                    <div class="anw">
+                        <span>This is second answer.</span>
+                    </div>
+                    <div class="que">
+                        <span>상품후기</span>
+                    </div>
+                    <div class="anw">
+                        <span>This is third answer.</span>
+                    </div>
+                </div>
+            </div>
+            <div id="tab03">
+                <div id="Accordion_wrap">
+                    <div class="que">
+                        <span>문의</span>
+                    </div>
+                    <div class="anw">
+                        <span>This is first answer.</span>
+                    </div>
+                    <div class="que">
+                        <span>문의</span>
+                    </div>
+                    <div class="anw">
+                        <span>This is second answer.</span>
+                    </div>
+                    <div class="que">
+                        <span>문의</span>
+                    </div>
+                    <div class="anw">
+                        <span>This is third answer.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- con3 -->
+    <div class="swiper-container gallery">
+        <div class="gallery_inner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/sub2image1.png" alt="갤러리1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/sub2image2.png" alt="갤러리1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/sub2image3.png" alt="갤러리1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/sub2image1.png" alt="갤러리1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/sub2image2.png" alt="갤러리1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/sub2image3.png" alt="갤러리1"></a>
+                </div>
+            </div>
+
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <img src="./images/logo.png" alt="로고 이미지">
+        <ul>
+            <li><a href="#"><img src="./images/instaicon.png" alt="인스타그램 아이콘"></a></li>
+            <li><a href="#"><img src="./images/twittericon.png" alt="트위터 아이콘"></a></li>
+            <li><a href="#"><img src="./images/youtubeicon.png" alt="유튜브 아이콘"></a></li>
+            <li><a href="#"><img src="./images/facebookicon.png" alt="페이스북 아이콘"></a></li>
+        </ul>
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">이용악관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">매장안내</a></li>
+        </ul>
+    </footer>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/searchbar.js"></script>
+    <script src="./script/tab.js"></script>
+    <script src="./script/tap_in.js"></script>
+    <script src="./script/gallerysub2.js"></script>
+  <script src="./script/popup.js"></script>
+<script src="./script/order.js"></script>
+</body>
+
+</html>
